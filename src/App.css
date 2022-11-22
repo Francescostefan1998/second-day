@@ -1,10 +1,61 @@
 .App {
   text-align: center;
+  background-color: #282c34;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.botom{
+  position: sticky!important;
+  bottom: 0px;
+  background-color: black;
+color: white;
+padding: 15px;
+
+}
+#display-book{
+  margin-inline: auto!important;
+
+}
+.black{
+  background-color: black;
+  opacity: 0.6;
+  z-index: 0;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#smaller{
+  width: 40vh;
+  position: relative;
+  z-index: -1;
+  margin-bottom: 20px;
+}
+#smaller img{
+  z-index: -2;
+}
+#wrap{
+  height: 4.5rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#jumb{
+  position: relative;
+  background-image: url(https://wallpapertag.com/wallpaper/full/0/f/2/540649-widescreen-library-background-image-1920x1080-photo.jpg);
+height: 60vh;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+color: white;
+font-size: larger;
+}
+#jumb h1, #jumb p{
+  z-index: 1;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -22,6 +73,10 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.row .col{
+  text-align: center;
 }
 
 .App-link {
